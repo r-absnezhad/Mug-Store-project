@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     "products",
     "customizers",
     "orders",
+    "rest_framework",
+    
 
 ]
 

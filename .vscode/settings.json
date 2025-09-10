@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
-        "customizers"
+        "customizers",
+        "djangorestframework",
+        "productserializers",
+        "viewset"
     ]
 }

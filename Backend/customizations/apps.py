@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CustomizersConfig(AppConfig):
+class CustomizationsConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "customizers"
+    name = "customizations"

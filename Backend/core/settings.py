@@ -39,9 +39,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "accounts",  # Custom app for user accounts
     "products",
-    "customizers",
+    "customizations",
     "orders",
     "rest_framework",
+    "django_filters"
     
 
 ]
@@ -141,3 +142,9 @@ STATICFILES_DIRS = [
 # Media settings
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+
+#  Django REST Framework settings
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+}

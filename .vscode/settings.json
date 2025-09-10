@@ -1,7 +1,10 @@
 {
     "cSpell.words": [
+        "customizationserializers",
         "customizers",
         "djangorestframework",
+        "orderitemserializers",
+        "orderserializers",
         "productserializers",
         "viewset"
     ]

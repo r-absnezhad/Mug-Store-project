@@ -24,7 +24,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("accounts.urls")),  # Include URLs from the accounts app
     path("products/", include("products.urls")),  # Include URLs from the products app
-    path("customizers/", include("customizers.urls")),  # Include URLs from the customizers app
+    path("customizations/", include("customizations.urls")),  # Include URLs from the customizations app
     path("orders/", include("orders.urls")),  # Include URLs from the orders app
 
 ]

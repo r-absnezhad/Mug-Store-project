@@ -4,6 +4,7 @@ from .views import OrderModelViewSet, OrderItemModelViewSet
 
 router = routers.SimpleRouter()
 router.register(r'orders', OrderModelViewSet)
+# what is the different?
 router.register(r'order-items', OrderItemModelViewSet)
 
 

@@ -1,5 +1,5 @@
 from rest_framework.routers import SimpleRouter
-from views import CustomizationModelViewSet
+from .views import CustomizationModelViewSet
 from django.urls import path, include
 
 

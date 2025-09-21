@@ -1,3 +1,2 @@
-from profileserializers import *
-from userserializers import *
-from tokenserializers import *
+from .profileserializers import *
+from .userserializers import *

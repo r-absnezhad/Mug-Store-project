@@ -15,13 +15,17 @@ urlpatterns = [
     path('', include(router.urls)),
     # registration / sign up
     path("registration/", views.RegistrationApiView.as_view(), name="registration"),
+    # activation
+    path("activation/confirm/<str:token>", views.ActivationApiView.as_view(), name ="activation"),
+    # resend activation
+    path("activation/resend/", views.ActivationResendApiView.as_view(), name ="activation-resend"),
 
     # login 
     path("token/login/", views.CustomObtainAuthToken.as_view(), name="token-login"),
     # logout
     path("token/logout/", views.CustomDiscardAuthToken.as_view(), name="token-logout"),
     #  jwt authentication
-    path('jwt/token/create/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('jwt/token/create/', views.CustomTokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('jwt/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('jwt/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
 
@@ -33,7 +37,6 @@ urlpatterns = [
     ),
     # reset password
     # reset password confirmation
-    #   از اینجااااااااااااااااااااا
     path(
         "password_reset/",
         views.CustomPasswordResetView.as_view(),

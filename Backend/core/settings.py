@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 from datetime import timedelta
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,14 +37,19 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.sites" ,
+    'django.contrib.sitemaps',
+    'drf_yasg',
     "accounts",  # Custom app for user accounts
     "products",
     "customizations",
-    "orders",
+    "orders.apps.OrdersConfig",
     "rest_framework",
     "django_filters",
     'rest_framework_simplejwt',
     "corsheaders",
+    "mail_templated",
+    "robots",
 
     
 
@@ -147,7 +152,11 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
+#  sites framework settings
+SITE_ID = 1
+# robots.txt settings
+ROBOTS_USE_HOST = False
+ROBOTS_USE_SITEMAP = True
 
 # Static settings
 STATIC_URL = "/static/"

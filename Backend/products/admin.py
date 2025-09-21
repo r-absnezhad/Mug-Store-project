@@ -15,7 +15,7 @@ class ProductAdmin(admin.ModelAdmin):
         (
             None,
             {
-                'fields': ('name', 'description', 'size', 'color', 'image', 'base_price', 'stock', 'is_available')
+                'fields': ('name', 'slug', 'description', 'size', 'color', 'image', 'base_price', 'stock', 'is_available')
             },
         ),
         (

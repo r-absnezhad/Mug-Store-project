@@ -1,6 +1,17 @@
+# General modules
 Django==4.2
 djangorestframework
-markdown      
-django-filter  
 djangorestframework-simplejwt
 django-cors-headers
+pillow
+
+
+# Third party modules
+markdown      
+django-filter  
+drf-yasg[validation]
+django-robots
+
+# deploy
+# email third party
+django-mail-templated

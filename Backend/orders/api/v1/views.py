@@ -1,7 +1,7 @@
 from rest_framework import viewsets
 from rest_framework.permissions import IsAuthenticated 
 from ...models import Order, OrderItem
-from serializers import OrderSerializer, OrderItemSerializer
+from .serializers import OrderSerializer, OrderItemSerializer
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
 
